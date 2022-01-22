@@ -5,7 +5,9 @@ import sys
 import serial
 import serial.tools.list_ports
 
-ser = serial.Serial(timeout=1)
+SERIAL_TIMEOUT = 0
+
+ser = serial.Serial(timeout=SERIAL_TIMEOUT)
 closeSerial = False
 
 window = Tk()
@@ -53,7 +55,7 @@ def selectPort(self):
         
     port=port_sel.get()
     try:
-        ser = serial.Serial(port, timeout=1)
+        ser = serial.Serial(port, timeout=SERIAL_TIMEOUT)
     except serial.SerialException as e:
         print(f"{e}")
         monitor.config(state=NORMAL)
