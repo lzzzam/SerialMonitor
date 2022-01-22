@@ -1,17 +1,22 @@
 # SerialMonitor
 A serial monitor completely developed using python
 
-# Requirements
+## Requirements
 ```Python
 pip install pyserial
 ```
-# Usage
-Run the main program with:
+## Usage
+#### **IMPORTANT DISCLAIMER**
+> This serial monitor wait for a special character to print the received data on the screen,
+> **End each transmission with a new line character ('\n')**
+
+#### How to use
+1. Run the main program with:
 
 ```Python
 python serial_monitor.py
 ```
 
-and select the right COM port from the tab at the bottom of the window.
+2. Select the right COM port from the tab at the bottom of the window.
 
-Then start receiving and transmitting datas
+3. Then start receiving and transmitting datas
