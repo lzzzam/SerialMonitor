@@ -1,4 +1,3 @@
-import ctypes
 import threading
 from tkinter import *
 import serial

@@ -1,4 +1,3 @@
-from cgitb import text
 from tkinter import *
 from tkinter import scrolledtext
 from tkinter.ttk import *
